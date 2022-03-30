@@ -1,0 +1,15 @@
+.waikane-logo {
+  width: 70%;
+  max-width: 10rem;
+  height: auto;
+}
+.sign-in {
+  width: 1.2rem;
+}
+.main-left {
+  background: linear-gradient(
+    to left,
+    rgba(171, 81, 135, 0.8),
+    rgba(77, 15, 109, 0.8)
+  );
+}
