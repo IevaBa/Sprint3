@@ -1,5 +1,6 @@
 .waikane-logo {
-  width: 10rem;
+  width: 15vw;
+  max-width: 10rem;
 }
 .sign-in {
   width: 1.2rem;
@@ -11,7 +12,27 @@
     rgba(77, 15, 109, 0.8)
   );
 }
+.footer {
+  height: 12rem;
+}
+.main {
+  margin-bottom: 12rem;
+}
+.brand-logo {
+  width: 50%;
+  max-width: 7vw;
+  filter: grayscale(1);
+  opacity: 0.5;
+}
+.brand-logo:hover {
+  opacity: 1;
+  filter: grayscale(0);
+}
 .customer-service {
+  background-color: #d09bb5;
+}
+.hline {
+  height: 0.1rem;
   background-color: #d09bb5;
 }
 @media (max-width: 768px) {
@@ -20,8 +41,10 @@
     font-size: small;
     text-align: left;
   }
-}
-.hline {
-  height: 0.1rem;
-  background-color: #d09bb5;
+  .footer {
+    height: 11rem;
+  }
+  .main {
+    margin-bottom: 11rem;
+  }
 }
