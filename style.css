@@ -18,6 +18,13 @@
 .main {
   margin-bottom: 12rem;
 }
+.pages-content {
+  margin-top: 6em;
+}
+.card p {
+  color: #d09bb5;
+  font-weight: bolder;
+}
 .brand-logo {
   width: 50%;
   max-width: 7vw;
