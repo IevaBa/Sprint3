@@ -25,6 +25,9 @@
   color: #d09bb5;
   font-weight: bolder;
 }
+h4 {
+  color: rgba(171, 81, 135, 0.8);
+}
 .brand-logo {
   width: 50%;
   max-width: 7vw;
@@ -41,6 +44,11 @@
 .hline {
   height: 0.1rem;
   background-color: #d09bb5;
+}
+
+.new-arrivals h5,
+.new-arrivals p {
+  color: rgb(252, 248, 248);
 }
 @media (max-width: 768px) {
   .customer-service,
