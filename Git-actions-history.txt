@@ -1,0 +1,460 @@
+Ieva@Ievas-MacBook-Pro Sprint3 % pwd
+/Users/Ieva/Desktop/Bit/Sprint3
+Ieva@Ievas-MacBook-Pro Sprint3 % touch .gitignore
+Ieva@Ievas-MacBook-Pro Sprint3 % code .gitignore
+
+Ieva@Ievas-MacBook-Pro Sprint3 % ls
+accessories.html        img                     mens.html               womens.html
+bootstrap               index.html              style.css
+Ieva@Ievas-MacBook-Pro Sprint3 % git init
+Initialized empty Git repository in /Users/Ieva/Desktop/Bit/Sprint3/.git/
+Ieva@Ievas-MacBook-Pro Sprint3 % git add .
+Ieva@Ievas-MacBook-Pro Sprint3 % git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+        new file:   accessories.html
+        new file:   img/user.svg
+        new file:   img/waikane-logo.png
+        new file:   index.html
+        new file:   mens.html
+        new file:   style.css
+        new file:   womens.html
+
+Ieva@Ievas-MacBook-Pro Sprint3 % git commit -m "First commit. Main page with navigation to 3 pages"
+[main (root-commit) 2209c5d] First commit. Main page with navigation to 3 pages
+ 8 files changed, 281 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 accessories.html
+ create mode 100644 img/user.svg
+ create mode 100644 img/waikane-logo.png
+ create mode 100644 index.html
+ create mode 100644 mens.html
+ create mode 100644 style.css
+ create mode 100644 womens.html
+Ieva@Ievas-MacBook-Pro Sprint3 % git status
+On branch main
+nothing to commit, working tree clean
+Ieva@Ievas-MacBook-Pro Sprint3 % git remote add origin https://github.com/IevaBa/Sprint3.git
+Ieva@Ievas-MacBook-Pro Sprint3 % git push -u origin main
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (11/11), 84.58 KiB | 8.46 MiB/s, done.
+Total 11 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/IevaBa/Sprint3.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+Ieva@Ievas-MacBook-Pro Sprint3 % 
+
+Ieva@Ievas-MacBook-Pro Sprint3 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   accessories.html
+        deleted:    img/user.svg
+        deleted:    img/waikane-logo.png
+        modified:   index.html
+        modified:   mens.html
+        modified:   style.css
+        modified:   womens.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        img/logo/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Ieva@Ievas-MacBook-Pro Sprint3 % git add .
+Ieva@Ievas-MacBook-Pro Sprint3 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   accessories.html
+        new file:   img/logo/logo_billabong.png
+        new file:   img/logo/logo_gill.png
+        new file:   img/logo/logo_helly-hansen.png
+        new file:   img/logo/logo_mystic.png
+        new file:   img/logo/logo_oneill.png
+        new file:   img/logo/logo_rip-curl.png
+        renamed:    img/user.svg -> img/logo/user.svg
+        renamed:    img/waikane-logo.png -> img/logo/waikane-logo.png
+        modified:   index.html
+        modified:   mens.html
+        modified:   style.css
+        modified:   womens.html
+
+Ieva@Ievas-MacBook-Pro Sprint3 % git commit -m "Added footer to all pages"
+[main 17889ed] Added footer to all pages
+ 13 files changed, 147 insertions(+), 8 deletions(-)
+ create mode 100644 img/logo/logo_billabong.png
+ create mode 100644 img/logo/logo_gill.png
+ create mode 100644 img/logo/logo_helly-hansen.png
+ create mode 100644 img/logo/logo_mystic.png
+ create mode 100644 img/logo/logo_oneill.png
+ create mode 100644 img/logo/logo_rip-curl.png
+ rename img/{ => logo}/user.svg (100%)
+ rename img/{ => logo}/waikane-logo.png (100%)
+Ieva@Ievas-MacBook-Pro Sprint3 % 
+
+Ieva@Ievas-MacBook-Pro Sprint3 % git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Ieva@Ievas-MacBook-Pro Sprint3 % git add .
+Ieva@Ievas-MacBook-Pro Sprint3 % git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        modified:   style.css
+
+Ieva@Ievas-MacBook-Pro Sprint3 % git commit -m "Added brands to main page, fixed styling and responsiveness"
+[main 79d3b4f] Added brands to main page, fixed styling and responsiveness
+ 2 files changed, 150 insertions(+), 73 deletions(-)
+Ieva@Ievas-MacBook-Pro Sprint3 % git log
+commit 79d3b4f5aacb4c83f215438648c2ed2dba5384a8 (HEAD -> main)
+Author: Ieva Baltriukaite <ieva.baltriukaite@gmail.com>
+Date:   Fri Apr 1 19:09:14 2022 +0300
+
+    Added brands to main page, fixed styling and responsiveness
+
+commit 17889ede10c1670f4c92ed5f540b0e8528ce9ada
+Author: Ieva Baltriukaite <ieva.baltriukaite@gmail.com>
+Date:   Thu Mar 31 19:33:44 2022 +0300
+
+    Added footer to all pages
+
+commit 2209c5dbc98794d279570334348b5fe7eb6c7994 (origin/main)
+Author: Ieva Baltriukaite <ieva.baltriukaite@gmail.com>
+Date:   Wed Mar 30 21:58:00 2022 +0300
+
+    First commit. Main page with navigation to 3 pages
+Ieva@Ievas-MacBook-Pro Sprint3 % git push -u origin main
+Enumerating objects: 26, done.
+Counting objects: 100% (26/26), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (19/19), 36.95 KiB | 12.32 MiB/s, done.
+Total 19 (delta 7), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (7/7), completed with 1 local object.
+To https://github.com/IevaBa/Sprint3.git
+   2209c5d..79d3b4f  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+Ieva@Ievas-MacBook-Pro Sprint3 %
+
+Ieva@Ievas-MacBook-Pro Sprint3 % git add .
+Ieva@Ievas-MacBook-Pro Sprint3 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   img/womens/21-1-scaled.jpeg
+        new file:   img/womens/25-595x893.jpeg
+        new file:   img/womens/3-2-scaled.jpeg
+        new file:   img/womens/85-scaled.jpeg
+        new file:   img/womens/BY1A0606.jpeg
+        new file:   img/womens/BY1A0796.jpeg
+        new file:   img/womens/BY1A1355.jpeg
+        new file:   img/womens/BY1A2899.jpeg
+        modified:   style.css
+        modified:   womens.html
+
+Ieva@Ievas-MacBook-Pro Sprint3 % git commit -m "Added content to the page Womens. Changed 
+navigation positioning and padding"
+[main 9817323] Added content to the page Womens. Changed navigation positioning and padding
+ 10 files changed, 107 insertions(+), 2 deletions(-)
+ create mode 100644 img/womens/21-1-scaled.jpeg
+ create mode 100644 img/womens/25-595x893.jpeg
+ create mode 100644 img/womens/3-2-scaled.jpeg
+ create mode 100644 img/womens/85-scaled.jpeg
+ create mode 100644 img/womens/BY1A0606.jpeg
+ create mode 100644 img/womens/BY1A0796.jpeg
+ create mode 100644 img/womens/BY1A1355.jpeg
+ create mode 100644 img/womens/BY1A2899.jpeg
+Ieva@Ievas-MacBook-Pro Sprint3 % git log
+commit 981732373f778ecacbb5963cc09489c3dd962742 (HEAD -> main)
+Author: Ieva Baltriukaite <ieva.baltriukaite@gmail.com>
+Date:   Fri Apr 1 20:58:47 2022 +0300
+
+    Added content to the page Womens. Changed navigation positioning and padding
+
+commit 79d3b4f5aacb4c83f215438648c2ed2dba5384a8 (origin/main)
+Author: Ieva Baltriukaite <ieva.baltriukaite@gmail.com>
+Date:   Fri Apr 1 19:09:14 2022 +0300
+
+    Added brands to main page, fixed styling and responsiveness
+
+commit 17889ede10c1670f4c92ed5f540b0e8528ce9ada
+Author: Ieva Baltriukaite <ieva.baltriukaite@gmail.com>
+Date:   Thu Mar 31 19:33:44 2022 +0300
+
+    Added footer to all pages
+Ieva@Ievas-MacBook-Pro Sprint3 % git add .
+Ieva@Ievas-MacBook-Pro Sprint3 % git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   img/mens/honey-blue.jpeg
+        new file:   img/mens/hoodie-mint.jpeg
+        new file:   img/mens/hoodie-vibe-brick.jpeg
+        new file:   img/mens/hoodie-vibe-grey.jpeg
+        new file:   img/mens/men-stripes.jpeg
+        new file:   img/mens/poncho-plum-man.jpeg
+        new file:   img/mens/poncho-waikane-khaki.jpeg
+        new file:   img/mens/waikane-vibe.jpeg
+        modified:   mens.html
+
+Ieva@Ievas-MacBook-Pro Sprint3 % git commit -m "Added content to page Mens. Changed naviga
+tion positioning and padding"
+[main 006b308] Added content to page Mens. Changed navigation positioning and padding
+ 9 files changed, 99 insertions(+), 2 deletions(-)
+ create mode 100644 img/mens/honey-blue.jpeg
+ create mode 100644 img/mens/hoodie-mint.jpeg
+ create mode 100644 img/mens/hoodie-vibe-brick.jpeg
+ create mode 100644 img/mens/hoodie-vibe-grey.jpeg
+ create mode 100644 img/mens/men-stripes.jpeg
+ create mode 100644 img/mens/poncho-plum-man.jpeg
+ create mode 100644 img/mens/poncho-waikane-khaki.jpeg
+ create mode 100644 img/mens/waikane-vibe.jpeg
+Ieva@Ievas-MacBook-Pro Sprint3 % git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Ieva@Ievas-MacBook-Pro Sprint3 % git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   accessories.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        img/accessories/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Ieva@Ievas-MacBook-Pro Sprint3 % git add .
+Ieva@Ievas-MacBook-Pro Sprint3 % git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   accessories.html
+        new file:   img/accessories/bag-india.jpeg
+        new file:   img/accessories/bag-tears.jpeg
+        new file:   img/accessories/buff-maroco.jpeg
+        new file:   img/accessories/buff-wild.jpeg
+        new file:   img/accessories/gloves-mustard.jpeg
+        new file:   img/accessories/hat-burgund.jpeg
+        new file:   img/accessories/hat-mustard.jpeg
+        new file:   img/accessories/hat-rainbow.jpeg
+
+Ieva@Ievas-MacBook-Pro Sprint3 % git commit -m "Added content to the page Accessories. Changed navigation positioning and padding"
+[main bf3db23] Added content to the page Accessories. Changed navigation positioning and padding
+ 9 files changed, 99 insertions(+), 2 deletions(-)
+ create mode 100644 img/accessories/bag-india.jpeg
+ create mode 100644 img/accessories/bag-tears.jpeg
+ create mode 100644 img/accessories/buff-maroco.jpeg
+ create mode 100644 img/accessories/buff-wild.jpeg
+ create mode 100644 img/accessories/gloves-mustard.jpeg
+ create mode 100644 img/accessories/hat-burgund.jpeg
+ create mode 100644 img/accessories/hat-mustard.jpeg
+ create mode 100644 img/accessories/hat-rainbow.jpeg
+Ieva@Ievas-MacBook-Pro Sprint3 % git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+Ieva@Ievas-MacBook-Pro Sprint3 % git push -u origin main
+Enumerating objects: 46, done.
+Counting objects: 100% (46/46), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (40/40), done.
+Writing objects: 100% (40/40), 11.36 MiB | 4.39 MiB/s, done.
+Total 40 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 1 local object.
+To https://github.com/IevaBa/Sprint3.git
+   79d3b4f..bf3db23  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+Ieva@Ievas-MacBook-Pro Sprint3 % 
+
+Ieva@Ievas-MacBook-Pro Sprint3 % git add .
+Ieva@Ievas-MacBook-Pro Sprint3 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+Ieva@Ievas-MacBook-Pro Sprint3 % git commit -m "Added <meta> tags to the main page"
+[main 177b399] Added <meta> tags to the main page
+ 1 file changed, 30 insertions(+)
+Ieva@Ievas-MacBook-Pro Sprint3 % git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 708 bytes | 708.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+
+Ieva@Ievas-MacBook-Pro Sprint3 % git branch -a
+* main
+  remotes/origin/main
+Ieva@Ievas-MacBook-Pro Sprint3 % git branch new_arrivals
+Ieva@Ievas-MacBook-Pro Sprint3 % git branch -a
+* main
+  new_arrivals
+  remotes/origin/main
+Ieva@Ievas-MacBook-Pro Sprint3 % git checkout new_arrivals
+Switched to branch 'new_arrivals'
+
+Ieva@Ievas-MacBook-Pro Sprint3 % git branch
+  main
+* new_arrivals
+Ieva@Ievas-MacBook-Pro Sprint3 % git add .
+Ieva@Ievas-MacBook-Pro Sprint3 % git status
+On branch new_arrivals
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   img/new_arrivals/hoodie-flame.jpeg
+        new file:   img/new_arrivals/hoodie-india.jpeg
+        new file:   img/new_arrivals/hoodie-lagoon.jpeg
+        new file:   img/new_arrivals/hoodie-oversize-tears.jpeg
+        modified:   index.html
+        modified:   style.css
+
+Ieva@Ievas-MacBook-Pro Sprint3 % git commit -m "Added New Arrivals section to the main page"
+[new_arrivals 67992cc] Added New Arrivals section to the main page
+ 6 files changed, 64 insertions(+), 1 deletion(-)
+ create mode 100644 img/new_arrivals/hoodie-flame.jpeg
+ create mode 100644 img/new_arrivals/hoodie-india.jpeg
+ create mode 100644 img/new_arrivals/hoodie-lagoon.jpeg
+ create mode 100644 img/new_arrivals/hoodie-oversize-tears.jpeg
+Ieva@Ievas-MacBook-Pro Sprint3 % 
+
+Ieva@Ievas-MacBook-Pro Sprint3 % git branch
+  main
+* new_arrivals
+Ieva@Ievas-MacBook-Pro Sprint3 % git add .
+Ieva@Ievas-MacBook-Pro Sprint3 % git status
+On branch new_arrivals
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   accessories.html
+        new file:   img/new_arrivals/bluza-tulipe.jpeg
+        new file:   img/new_arrivals/hoodie-orchid-oversize.jpeg
+        new file:   img/new_arrivals/hoodie-orchid.jpeg
+        new file:   img/new_arrivals/hoodie-oversize-peony.jpeg
+        new file:   img/new_arrivals/hoodie-tears.jpeg
+        modified:   index.html
+        modified:   mens.html
+        new file:   new_arrivals.html
+        modified:   style.css
+        modified:   womens.html
+
+Ieva@Ievas-MacBook-Pro Sprint3 % git commit -m "Created page New Arrivals and added it to other pages navigation"
+[new_arrivals b91da3a] Created page New Arrivals and added it to other pages navigation
+ 11 files changed, 214 insertions(+), 1 deletion(-)
+ create mode 100644 img/new_arrivals/bluza-tulipe.jpeg
+ create mode 100644 img/new_arrivals/hoodie-orchid-oversize.jpeg
+ create mode 100644 img/new_arrivals/hoodie-orchid.jpeg
+ create mode 100644 img/new_arrivals/hoodie-oversize-peony.jpeg
+ create mode 100644 img/new_arrivals/hoodie-tears.jpeg
+ create mode 100644 new_arrivals.html
+Ieva@Ievas-MacBook-Pro Sprint3 % git log
+commit b91da3af9444221f31735ac544b41843564fdc84 (HEAD -> new_arrivals)
+Author: Ieva Baltriukaite <ieva.baltriukaite@gmail.com>
+Date:   Tue Apr 5 19:02:27 2022 +0300
+
+    Created page New Arrivals and added it to other pages navigation
+
+commit 67992cc4b4dcdd0fb451a2c8d2b937cfa470f69b
+Author: Ieva Baltriukaite <ieva.baltriukaite@gmail.com>
+Date:   Tue Apr 5 18:19:41 2022 +0300
+
+    Added New Arrivals section to the main page
+
+commit 177b39919997f5ec34c0595f391c09795298ea68 (origin/main, main)
+Author: Ieva Baltriukaite <ieva.baltriukaite@gmail.com>
+Date:   Mon Apr 4 23:10:46 2022 +0300
+
+    Added <meta> tags to the main page
+
+Ieva@Ievas-MacBook-Pro Sprint3 % git push --set-upstream origin new_arrivals
+Enumerating objects: 32, done.
+Counting objects: 100% (32/32), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (25/25), done.
+Writing objects: 100% (25/25), 2.98 MiB | 2.90 MiB/s, done.
+Total 25 (delta 11), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (11/11), completed with 6 local objects.
+remote: 
+remote: Create a pull request for 'new_arrivals' on GitHub by visiting:
+remote:      https://github.com/IevaBa/Sprint3/pull/new/new_arrivals
+remote: 
+To https://github.com/IevaBa/Sprint3.git
+ * [new branch]      new_arrivals -> new_arrivals
+Branch 'new_arrivals' set up to track remote branch 'new_arrivals' from 'origin'.
+Ieva@Ievas-MacBook-Pro Sprint3 % 
+
+Ieva@Ievas-MacBook-Pro Sprint3 % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+Ieva@Ievas-MacBook-Pro Sprint3 % touch README.md
+Ieva@Ievas-MacBook-Pro Sprint3 % code README.md
+Ieva@Ievas-MacBook-Pro Sprint3 % 
+
+Ieva@Ievas-MacBook-Pro Sprint3 % git add .
+Ieva@Ievas-MacBook-Pro Sprint3 % git commit -m "Added README.md file"
+[main 8b0e109] Added README.md file
+ 1 file changed, 28 insertions(+)
+ create mode 100644 README.md
+Ieva@Ievas-MacBook-Pro Sprint3 % git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 954 bytes | 954.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/IevaBa/Sprint3.git
+   177b399..8b0e109  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+Ieva@Ievas-MacBook-Pro Sprint3 % 
+Ieva@Ievas-MacBook-Pro Sprint3 % touch Git-actions-history.txt
+Ieva@Ievas-MacBook-Pro Sprint3 % code Git-actions-history.txt
