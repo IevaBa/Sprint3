@@ -15,11 +15,14 @@
 
 Project was made using localy stored Bootstrap library. To open my project, follow the steps below:
 
-1. Download Compiled CSS and JS Bootstrap library file. [Download](https://getbootstrap.com/docs/5.1/getting-started/download/)
-2. Extract downloaded file.
-3. Rename the library folder named "bootstrap-5.1.3-dist" to just “bootstrap” and store it in the "index.html" file directory.
-4. Open "index.html" file using your preferred internet browser.
-5. Enjoy 😊
+1. Clone my Github repository [Sprint3](https://github.com/IevaBa/Sprint3.git). ![](img/readme/clone.png)
+2. Open your terminal, type <span style="background:#DEDEDE; border-radius:5px; padding: 2px">git clone</span>, paste the URL you cloned and press Enter.
+3. Bravo! You already have your local clone.
+4. Now download Compiled CSS and JS Bootstrap library file. [Download](https://getbootstrap.com/docs/5.1/getting-started/download/)
+5. Extract downloaded file.
+6. Rename the library folder named "bootstrap-5.1.3-dist" to just “bootstrap” and store it in the "index.html" file directory.
+7. Open "index.html" file using your preferred internet browser.
+8. Enjoy 😊
 
 ## Author
 
